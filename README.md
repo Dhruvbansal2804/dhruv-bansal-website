@@ -1,1 +1,2 @@
 # dhruv-bansal-website
+Welcome to my portfolio website! This is a showcase of my work, skills, and experiences. You can explore various projects I've worked on and get to know more about my background.
