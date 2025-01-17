@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhruv Bansal - Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background-color: #f8fafc;
+        }
+
+        header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #1f2937;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #2563eb;
+        }
+
+        .hero {
+            background: #dbeafe;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: #2563eb;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        section {
+            padding: 4rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #2563eb;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            background: #dbeafe;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .project-content h3 {
+            color: #2563eb;
+            margin-bottom: 1rem;
+        }
+
+        .experience-item {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .date {
+            color: #2563eb;
+            margin-bottom: 0.5rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .skills-category {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills-category h3 {
+            color: #2563eb;
+            margin-bottom: 1rem;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #dbeafe;
+            border-radius: 20px;
+            margin: 0.25rem;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        .button:hover {
+            background: #1e40af;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            font-size: 1.5rem;
+        }
+
+        .social-links a {
+            color: #2563eb;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Dhruv Bansal</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Hi, I'm Dhruv Bansal</h1>
+        <p>AI/ML Enthusiast | Problem Solver | Tech Explorer</p>
+        <a href="#contact" class="button">Get in Touch</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a Computer Science Engineering student specializing in AI and ML at Manipal University Jaipur. I'm passionate about leveraging technology to solve real-world problems.</p>
+        <div class="skills-grid">
+            <div class="skills-category">
+                <h3>Programming</h3>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">SQL</span>
+            </div>
+            <div class="skills-category">
+                <h3>Web Development</h3>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">TailwindCSS</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="/Users/dhruvbansal/Desktop/portfolio website/odyssues.png" alt="Odysseus Robot" class="project-image">
+                <div class="project-content">
+                    <h3>Odysseus</h3>
+                    <p>An autonomous maze-solving robot (IEEE Micromouse). Leading a 12-member team in algorithm design and AI implementation.</p>
+                    <a href="https://www.randomizemuj.com/odysseus" class="button">Learn More</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="/Users/dhruvbansal/Desktop/portfolio website/emos photo.webp" alt="Emotion Detection" class="project-image">
+                <div class="project-content">
+                    <h3>Emotion Detection</h3>
+                    <p>Real-time emotion detection using Scikit-learn, OpenCV, and TensorFlow with 85% accuracy.</p>
+                    <a href="https://github.com/Dhruvbansal2804/emotion-detection-using-video" class="button">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="/Users/dhruvbansal/Desktop/portfolio website/fitness.webp" alt="Fitness App" class="project-image">
+                <div class="project-content">
+                    <h3>Fitness App</h3>
+                    <p>Web-based fitness platform with Firebase backend for health and exercise tracking.</p>
+                    <a href="https://github.com/Dhruvbansal2804/quantum-fitness-app" class="button">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>AICTE Edunet IBM SkillsBuild</h3>
+            <p class="date">June 2024 - July 2024</p>
+            <p>Developed a modern web platform for concert ticket bookings with Firebase integration.</p>
+        </div>
+        <div class="experience-item">
+            <h3>VLink India Pvt. Ltd</h3>
+            <p class="date">May 2023 - July 2023</p>
+            <p>Implemented SEO strategies and contributed to front-end development. Published 30+ technology-focused blogs.</p>
+        </div>
+        <div class="experience-item">
+            <h3>INCLINATION IT INNOVATIONS PVT. LTD.</h3>
+            <p class="date">December 2022 - January 2023</p>
+            <p>Contributed to front-end development and implemented responsive design principles.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>I'm always open to discussing new projects and opportunities.</p>
+        <p>Email: dhruvbansal2804@gmail.com</p>
+        <div class="social-links">
+            <a href="https://github.com/Dhruvbansal2804" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/dhruv-bansal-29b00a168/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:dhruvbansal2804@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+    </section>
+</body>
+</html>
